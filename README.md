@@ -4,7 +4,7 @@ This project uses 2023 data from the National Commission for Protection of Child
 ## 🛠️ Tools <br>
 • <b>Language:</b> Python <p>
 ## 🖼️ Images <br>
-<img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/NCPCR_2023_Graph.png" width="400" />
+<img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/NCPCR_2023_Graph.png" width="600" />
 ```
 # Function to read dataset
 def readData():
@@ -23,7 +23,7 @@ def readData():
                 myList.append((name.strip(), int(value)))
     return myList, total_line
 ```
-<img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/BSCiSS_2023_Graph.png" width="400" />
+<img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/BSCiSS_2023_Graph.png" width="600" />
 ```
 # Function to sort data by value
 def sortData(data):

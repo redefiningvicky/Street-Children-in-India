@@ -3,7 +3,7 @@ import time
 
 # Function to read dataset
 def readData():
-    with open(r"C:\Users\redef\OneDrive\Desktop\Street_Children_in_India\BSCiSS_2023_Dataset.TXT", 'r') as file:
+    with open(r"C:\Users\redef\OneDrive\Desktop\Github - Vicky\Street_Children_in_India\BSCiSS_2023_Dataset.TXT", 'r') as file:
         lines = file.readlines()
     myList = []
     # Loop through each line in the file
@@ -31,15 +31,17 @@ def drawBar(name, height, width=40, font_size=8):
     forward(height)
     left(90)
     end_fill()
+
     # Calculate the positions for the labels
     label_x = start_x + (width / 2)
-    name_y = start_y + height + 1000  # Reduced margin
-    height_y = start_y + height + 100  # Place the height closer to the bar
+    name_y = start_y + height + 1000  
+    height_y = start_y + height + 100  
+    
     # Move to the correct position for the name and write it
     penup()
     goto(label_x, name_y)
-    write(f"{name}", align="center", font=("Arial", font_size, "bold"))
-    # Move to the correct position for the height and write it
+    write(f"{name}", align="center", font=("Arial", 10, "bold"))
+    # Move to the correct position for the name and write it
     goto(label_x, height_y)
     write(f"{height}", align="center", font=("Arial", 10, "normal"))
     # Return the turtle to the starting point of the next bar
@@ -56,27 +58,32 @@ def drawGraph(data, title, screen):
     maxheight = max([height for _, height in data])
     top_margin = maxheight * 0.3 + 50
     bottom_margin = 50
+    
     # Clear previous drawing
     screen.clearscreen()
+    
     # Calculate the total width of the bars and add extra space for the title
     bar_width = 300
     gap_width = 100
+    
     # Calculate the total width of the graph dynamically
     bars_total_width = (bar_width + gap_width) * numBars
     graph_width = bars_total_width + 150
+    
     # Set coordinates so the bars and title fit proportionally
     screen.setworldcoordinates(-graph_width / 2, 0, graph_width / 2, maxheight + top_margin + bottom_margin)
     screen.title(title)
     speed('fastest')
     penup()
+    
     # Draw title centered horizontally at the top of the window
     goto(0, maxheight + bottom_margin + top_margin - 20)
     write(title, align="center", font=("Arial", 16, "bold"))
+    
     # Draw bars
     goto(-(bars_total_width / 2), bottom_margin)
     pendown()
     for name, height in data:
-        # Pass a smaller font size to drawBar for the names
         drawBar(name, height, width=bar_width, font_size=8)
         penup()
         forward(gap_width)

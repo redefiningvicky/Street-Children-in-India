@@ -32,10 +32,12 @@ def drawBar(name, height, width=40):
     forward(height)
     left(90)
     end_fill()
+    
     # Calculate the positions for the labels
     label_x = start_x + (width / 2)
-    name_y = start_y + height + 250  # Place the name higher up
-    height_y = start_y + height + 50  # Place the height closer to the bar
+    name_y = start_y + height + 250
+    height_y = start_y + height + 50
+
     # Move to the correct position for the name and write it
     penup()
     goto(label_x, name_y)
@@ -57,22 +59,28 @@ def drawGraph(data, title, screen):
     maxheight = max([height for _, height in data])
     top_margin = maxheight * 0.3 + 50
     bottom_margin = 50
+    
     # Clear previous drawing
     screen.clearscreen()  
+    
     # Calculate the total width of the bars and add extra space for the title
     bar_width = 60
     gap_width = 15
+   
     # Calculate the total width of the graph dynamically
     bars_total_width = (bar_width + gap_width) * numBars
     graph_width = bars_total_width + 150
+    
     # Set coordinates so the bars and title fit proportionally
     screen.setworldcoordinates(-graph_width / 2, 0, graph_width / 2, maxheight + top_margin + bottom_margin)
     screen.title(title)
     speed('fastest')
     penup()
+    
     # Draw title centered horizontally at the top of the window
     goto(0, maxheight + bottom_margin + top_margin - 20)
     write(title, align="center", font=("Arial", 16, "bold"))
+    
     # Draw bars
     goto(-(bars_total_width / 2), bottom_margin)
     pendown()

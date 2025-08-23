@@ -3,7 +3,7 @@ import time
 
 # Function to read dataset
 def readData():
-    with open(r"C:\Users\redef\OneDrive\Desktop\Github - Vicky\Street_Children_in_India\BSCiSS_2023_Dataset.TXT", 'r') as file:
+    with open(r"C:\Users\redef\OneDrive\Desktop\Street_Children_in_India\BSCiSS_2023_Dataset.TXT", 'r') as file:
         lines = file.readlines()
     myList = []
     # Loop through each line in the file
@@ -17,7 +17,7 @@ def readData():
             myList.append((name.strip(), value))
     return myList
 
-def drawBar(name, height, width=40, font_size=8):
+def drawBar(name, height, width=40):
     # Get the current position of the turtle before drawing the bar
     start_x, start_y = pos()
     # Draw the bar

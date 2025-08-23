@@ -2,7 +2,7 @@ from turtle import *
 
 # Function to read dataset
 def readData():
-    with open(r"C:\Users\redef\OneDrive\Desktop\Street_Children_in_India\BSCiSS_2023_Dataset.TXT", 'r') as file:
+    with open(r"C:/Users/redef/OneDrive/Desktop/Github - Vicky/Street_Children_in_India/02_Dataset\BSCiSS_2023_Dataset.TXT", 'r') as file:
         lines = file.readlines()
     myList = []
     # Loop through each line in the file
@@ -34,7 +34,7 @@ def drawBar(name, height, width=40):
     # Calculate the positions for the labels
     label_x = start_x + (width / 2)
     name_y = start_y + height + 1000  
-    height_y = start_y + height + 100  
+    height_y = start_y + height + 200  
     
     # Move to the correct position for the name and write it
     penup()
@@ -83,7 +83,7 @@ def drawGraph(data, title, screen):
     goto(-(bars_total_width / 2), bottom_margin)
     pendown()
     for name, height in data:
-        drawBar(name, height, width=bar_width, font_size=8)
+        drawBar(name, height, width=bar_width)
         penup()
         forward(gap_width)
         pendown()

@@ -2,7 +2,7 @@ from turtle import *
 
 # Function to read dataset
 def readData():
-    with open(r"C:\Users\redef\OneDrive\Desktop/Street_Children_in_India/NCPCR_2023_Dataset.TXT", 'r') as file:
+    with open(r"C:/Users/redef/OneDrive/Desktop/Github - Vicky/Street_Children_in_India/02_Dataset/NCPCR_2023_Dataset.TXT", 'r') as file:
         lines = file.readlines()
     myList = []
     total_line = None

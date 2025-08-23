@@ -7,6 +7,9 @@ This project uses data from the National Commission for Protection of Child Righ
 <img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/NCPCR_2023_Graph.png" width="900" />
 
 ```
+from turtle import *
+```
+```
 # Function to read dataset
 def readData():
     with open(r"NCPCR_2023_Dataset.TXT", 'r') as file:

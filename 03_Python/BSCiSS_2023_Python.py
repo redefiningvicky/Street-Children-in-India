@@ -1,5 +1,4 @@
 from turtle import *
-import time
 
 # Function to read dataset
 def readData():

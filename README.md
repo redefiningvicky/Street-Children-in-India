@@ -27,6 +27,22 @@ def readData():
 <img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/BSCiSS_2023_Graph.png" width="900" />
 
 ```
+def drawBar(name, height, width=40):
+    # Get the current position of the turtle before drawing the bar
+    start_x, start_y = pos()
+    # Draw the bar
+    begin_fill()
+    forward(width)
+    left(90)
+    forward(height)
+    left(90)
+    forward(width)
+    left(90)
+    forward(height)
+    left(90)
+    end_fill()
+```
+```
 # Function to sort data by value
 def sortData(data):
     return sorted(data, key=lambda x: x[1])

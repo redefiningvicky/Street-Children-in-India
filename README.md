@@ -1,6 +1,6 @@
 # 🧸 Street Children in India
 ## 🎯 Objective <br>
-This project uses data from the Child in Street Situations (CISS) Portal on the Baalswaraj platform and the National Commission for Protection of Child Rights (NCPCR) to analyze the number of street children in India by state and living situation. It processes the dataset in Python and generates bar graphs (unsorted and sorted) using Turtle graphics for clear visualization. <p>
+This project uses data from the National Commission for Protection of Child Rights (NCPCR) and Child in Street Situations (CISS) Portal on the Baalswaraj platform to analyze the number of street children in India by state and living situation. It processes the dataset in Python and generates bar graphs (unsorted and sorted) using Turtle graphics for clear visualization. <p>
 ## 🛠️ Tools <br>
 • <b>Language:</b> Python <p>
 ## 📊 GIF <br>

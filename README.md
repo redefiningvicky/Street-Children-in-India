@@ -5,8 +5,8 @@ This project uses data from the Child in Street Situations (CISS) Portal on the 
 • <b>Language:</b> Python <p>
 ## 📊 GIF <br>
 <img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/23f0d060094b0f09b3494ab973d6792ab2d634df/05_GIF/NCPCR_2023_GIF.gif" width="750" />
-<img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/23f0d060094b0f09b3494ab973d6792ab2d634df/05_GIF/BSCISS_2023_GIF.gif" width="750" /> <p>
-```
+<img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/23f0d060094b0f09b3494ab973d6792ab2d634df/05_GIF/BSCISS_2023_GIF.gif" width="750" />
+
 ## 📊 Bar Graphs <br>
 <img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/NCPCR_2023_Graph.png" width="900" />
 

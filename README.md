@@ -2,7 +2,7 @@
 ## 🎯 Objective <br>
 This project uses data from the National Commission for Protection of Child Rights (NCPCR) and Child in Street Situations (CISS) Portal on the Baalswaraj platform to analyze the number of street children in India by state and living situation. It processes the dataset in Python and generates bar graphs (unsorted and sorted) using Turtle graphics for clear visualization. <p>
 ## 🛠️ Tools <br>
-• <b>Language:</b> Python <p>
+• <b>Programming & Computational Analysis:</b> Python <p>
 ## 📊 Bar Graphs <br>
 <img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/7be55956115d3dd9f2e2b9093e22d6df1e1195f0/05_GIF/NCPCR_2023_GIF.gif" width="900" />
 <img src="https://github.com/redefiningvicky/Street-Children-in-India/blob/e5de99d2a122c11cfbb70276cd74c50e45232add/04_Graph/NCPCR_2023_Graph.png" width="900" />
